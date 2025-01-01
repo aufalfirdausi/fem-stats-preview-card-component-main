@@ -16,26 +16,44 @@ body {
 
 .card {
     background-color: rgb(25, 4, 68);
-    height: auto;
+    height: 447px;
     min-width: 900px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     max-height: 100vh;
-    
 }
 
 .right {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: rgb(172, 72, 235);
+    display: inline-block;
+    
 }
 
-.right h2 {
+
+
+.left {
+    padding: 30px 40px 20px 20px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+.left .insights {
     font-size: 40px;
     padding: 0px 50px;
+}
+
+.insights span {
+    color: rgb(135, 6, 183);
+}
+
+.description {
+    color: grey;
+    font-size: large;
 }
 
 .highliht {
@@ -45,12 +63,23 @@ body {
 .service {
     display: flex;
     flex-direction: row;
+    position: relative ;
+    top: 40px;
 }
 
 .service .numb {
-    margin: 50px;
+    margin-right: 50px;
 }
+
+.service p {
+    color: grey;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+} 
 
 .photo {
    align-self: flex-end;
+   mix-blend-mode: multiply;
+   background: rgb(172, 72, 235);
 }
